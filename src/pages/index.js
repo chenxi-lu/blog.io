@@ -9,12 +9,12 @@ const IndexPage = () => (
   <Layout>
     {/* <Seo title="Home" /> */}
     <h1>WELCOME TO PP7' HOME!</h1>
+    {/* <h1>WELCOME TO PP7' HOME!</h1>
     <h1>WELCOME TO PP7' HOME!</h1>
     <h1>WELCOME TO PP7' HOME!</h1>
     <h1>WELCOME TO PP7' HOME!</h1>
     <h1>WELCOME TO PP7' HOME!</h1>
-    <h1>WELCOME TO PP7' HOME!</h1>
-    <h1>WELCOME TO PP7' HOME!</h1>
+    <h1>WELCOME TO PP7' HOME!</h1> */}
 {/* 
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
