@@ -4,10 +4,10 @@ import { Link } from "gatsby"
 import "./index.less"
 const Header = () => {
   const tabs = [
-    ["Video", "视频", '/blog.io/vlog'],
-    ["Music", "音乐", '/blog.io/music'],
-    ["Photos", "相册", '/blog.io/photos'],
-    ["Technics", "技术", '/blog.io/technics']
+    ["Video", "视频", '/vlog'],
+    ["Music", "音乐", '/music'],
+    ["Photos", "相册", '/photos'],
+    ["Technics", "技术", '/technics']
   ]
   return (
     <header className="header-wrap">
