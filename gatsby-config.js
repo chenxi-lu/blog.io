@@ -7,8 +7,16 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    `gatsby-plugin-less`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    'gatsby-plugin-antd',
+    // {
+    //   resolve: 'gatsby-plugin-antd',
+    //   options: {
+    //     style: true
+    //   }
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
