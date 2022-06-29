@@ -4,15 +4,16 @@ import { Link } from "gatsby"
 import "./index.less"
 const Header = () => {
   const tabs = [
-    ["Video", "视频", '/vlog'],
-    ["Music", "音乐", '/music'],
-    ["Photos", "相册", '/photos'],
-    ["Technics", "技术", '/technics']
+    ["Video", "别样人生", '/vlog'],
+    ["Music", "跳动音符", '/music'],
+    ["Photos", "时光印记", '/photos'],
+    ["Technics", "八股文", '/technics'],
+    ["Funny", "生活趣味", '/funny']
   ]
   return (
     <header className="header-wrap">
       <div className="content">
-          <span className="title">PP7' Blog</span>
+          <span className="title">PP7' Microcosm</span>
           <div className="tabs">
             {tabs.map((item, index) => {
               return (

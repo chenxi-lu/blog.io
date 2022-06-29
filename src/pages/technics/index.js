@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { Tabs } from 'antd'
 import Body  from "../../components/body"
 import Item from "../../components/item"
-import { article } from '../../configs/data/article'
+import { article } from '../../configs/data/extract'
 import { knowledgeTitles } from '../../configs/data/knowledge'
 
 import "./index.less"
@@ -17,7 +17,7 @@ const Technics = () => {
         <h5>文章摘录</h5>
         {articles.map((value, index) => {
           const {img, title, link} = value
-          return <Item bgImg={img} title={title} link={link}/>
+          return <Item bgImg={img} title={title} link={link} key={index}/>
         })}
       </div>
       <div className="knowledge">
@@ -27,9 +27,7 @@ const Technics = () => {
             return <TabPane tab={value} key={index}>{value}</TabPane>
           })}
         </Tabs>
-        
       </div>
-      
     </Body>
   )
 }
