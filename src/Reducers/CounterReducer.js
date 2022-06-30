@@ -1,10 +1,12 @@
-const initialState = { counterData: 1 };
+const initialState = { 
+  counterData: 1
+};
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case 'INCREMENT': return {
             ...state,
-            counterData: action.payload + 1
+            counterData: action.payload + 10
         }
         case 'DECREMENT': return {
             ...state,

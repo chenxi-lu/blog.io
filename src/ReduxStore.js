@@ -1,9 +1,12 @@
-import { createStore } from 'redux';
-import Reducer from '../src/Reducers/CounterReducer';
+import { createStore, combineReducers } from 'redux';
+import CounterReducer from '../src/Reducers/CounterReducer';
+import HeaderReducer from '../src/Reducers/HeaderReducer';
 
 const initialState = {
-    counterData: 1
+    counterData: 66,
+    currentTab: 'index'
 }
-const store = createStore(Reducer, initialState);
+const reducers = combineReducers({CounterReducer, HeaderReducer})
+const store = createStore(reducers, initialState);
 
 export default store;

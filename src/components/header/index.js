@@ -1,8 +1,12 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import reduxStore from '../../ReduxStore';
+import { useSelector } from 'react-redux';
+import {setTab} from '../../Actions/HeaderAction';
 
 import "./index.less"
 const Header = () => {
+  let counterTab = useSelector(state => state.HeaderReducer.currentTab);
   const tabs = [
     ["Video", "别样人生", '/vlog'],
     ["Music", "跳动音符", '/music'],
@@ -10,6 +14,7 @@ const Header = () => {
     ["Technics", "八股文", '/technics'],
     ["Funny", "生活趣味", '/funny']
   ]
+  
   return (
     <header className="header-wrap">
       <div className="content">
@@ -17,9 +22,10 @@ const Header = () => {
           <div className="tabs">
             {tabs.map((item, index) => {
               return (
-                <Link className="tab" to={item[2]} key={index}>
-                  <div className="item">{item[0]}</div>
-                  <div className="note">{item[1]}</div>
+                <Link className="tab" to={item[2]} key={index} onClick={() =>
+                  reduxStore.dispatch(setTab(item[0]))}>
+                  <div className={counterTab === item[0] ? 'active-item' : 'item'}>{item[0]}</div>
+                  <div className={counterTab === item[0] ? 'active-note' : 'note'}>{item[1]}</div>
                 </Link>
               )
             })}
