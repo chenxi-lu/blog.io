@@ -23,7 +23,8 @@ module.exports = {
     {img: `${baseUrl}/2017/12/29/boredpanda.jpg`, title: 'Cookie和SameSite', link: 'https://github.com/mqyqingfeng/Blog/issues/157'},
     {img: `${baseUrl}/2017/12/29/boredpanda.jpg`, title: 'http缓存', link: 'https://libin1991.github.io/2018/11/22/HTTP%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6-200%E8%BF%98%E6%98%AF304/'},
     {img: `${baseUrl}/2017/12/29/boredpanda.jpg`, title: '浏览器缓存', link: 'https://segmentfault.com/a/1190000018717463'},
-    {img: `${baseUrl}/2018/08/25/%E4%BA%91%E5%88%9B%E6%84%8F.jpg`, title: '部署gatsby个人博客', link: ' https://zhuanlan.zhihu.com/p/350718743'},
+    {img: `${baseUrl}/2018/08/25/%E4%BA%91%E5%88%9B%E6%84%8F.jpg`, title: '部署gatsby个人博客', link: 'https://zhuanlan.zhihu.com/p/350718743'},
+    {img: `${baseUrl}/2018/01/13/WechatIMG561.jpeg`, title: 'gatsby接入redux', link: 'https://kasunvimu8.medium.com/stateful-gatsby-with-redux-261e68139ec7'},
   ],
   funnySite: [
     {img: `${baseUrl}/2018/03/01/Artboard_Copy_81.jpg`, title: '解压小喵喵~', link: 'https://bongo.cat/'},

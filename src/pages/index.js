@@ -1,15 +1,14 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
 import Body from "../components/body"
-import Seo from "../components/seo"
+import Counter from '../components/Counter';
 
-const IndexPage = () => (
-  <Body>
-    <div>index page</div>
-  </Body>
-  
-)
+const Root =  () => {
+  return (
+    <Body>
+      <h1>Counter</h1>
+      <Counter/>
+    </Body>
+  )
+}
 
-export default IndexPage
+export default Root;
