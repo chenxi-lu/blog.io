@@ -12,13 +12,15 @@ const Header = () => {
     ["Music", "跳动音符", '/music'],
     ["Photos", "时光印记", '/photos'],
     ["Technics", "八股文", '/technics'],
-    ["Funny", "生活趣味", '/funny']
+    ["Funny", "生活趣味", '/funny'],
   ]
   
   return (
     <header className="header-wrap">
       <div className="content">
-          <span className="title">PP7' Microcosm</span>
+          <Link to='/' onClick={() => reduxStore.dispatch(setTab('index'))}>
+            <span className="title">PP7' Microcosm</span>
+          </Link>
           <div className="tabs">
             {tabs.map((item, index) => {
               return (
